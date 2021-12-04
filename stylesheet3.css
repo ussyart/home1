@@ -1,0 +1,219 @@
+/* ページの余白を消す */
+body {
+   margin-top: -37px;
+   padding: 0;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+/* トップの動画エリア */
+.top-area {
+  background-color:black;
+  width:100vw;
+  height:108vh;
+  margin-top:-30px;
+  object-fit: cover;
+
+}
+
+/* トップの動画 */
+.top-video {
+  width:100vw;
+  height:108vh;
+  opacity: 0.6;
+  position: relative;
+  display: none;
+  object-fit: cover;
+
+}
+
+
+
+/* トップの文字「The distribution warehouse is...」 */
+.text-top-renovation-of {
+  text-align:center;
+  font-family: 游明朝体;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+  opacity: 0.8;
+  width:85%;
+  display: none;
+}
+
+/* トップの文字「物流倉庫がお洒落な...」 */
+.text-top-renovation-of span {
+  font-size:70%;
+}
+
+/* 文字「SCROLL」と「▽」 */
+.scroll {
+  text-align:center;
+  font-family: 游明朝体;
+  position: absolute; /* 上80%の位置。左50%の位置になるよう指定 */
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);　/* 左右50%の位置。つまり真ん中になるよう指定 */
+  opacity: 0.8;
+  width:85%;
+  color:white;
+  display: none;
+}
+
+/* 文字「Innovative fashionable space.」 */
+.text-innovative{
+  text-align:center;
+  font-family: 游明朝体;
+  margin-top:3.472vw;
+}
+
+/* 文字「革新的なお洒落空間」 */
+.text-innovative span {
+  font-size:80%;
+}
+
+/* 文字「機能性だけではなく、見た目にもこだわりました...」 */
+.text-functionality {
+  text-align:center;
+  font-family: 游明朝体;
+  width:52%;
+  margin: 0 auto;
+  margin-top:2vw;
+}
+
+/* 写真１（一番上）のエリア */
+.photo1 {
+  width:68.6%;
+  height:38.542vw;
+  margin:0 auto;
+  margin-top:6.944vw;
+}
+
+/* 写真「フォトスタジオ」 */
+.iarehouse {
+  width:100%;
+}
+
+
+/* 写真２（左右）のエリア全体 */
+.photo2 {
+  width:70%;
+  height:31.25vw;
+  margin:0 auto;
+  margin-top:2.778vw;
+}
+
+/* 写真２　左・右のエリア */
+.img2 {
+  width:48%;
+  height:31.25vw;
+  float:left;
+  margin:0 0.694vw;
+}
+
+/* 写真「会社外見」 */
+.company {
+  width:100%;
+  float:left;
+}
+
+/* 写真「デスク」 */
+.desk {
+  width:100%;
+  margin-top:-24px;
+}
+
+/* 写真にカーソルを乗せると1.05倍の大きさになる（0.5秒で） */
+.photo:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+/* 写真にカーソルが乗っていない時、0.5秒で元に戻る */
+.photo {
+  transition: 0.5s;
+}
+
+/* 文字「Renovation of distribution warehouse...」 */
+.text-renovation-of {
+  text-align:center;
+  font-family: 游明朝体;
+  margin-top:6.944vw;
+}
+
+/* 文字「物流倉庫をリノベーション」 */
+.text-renovation-of span {
+  font-size:80%;
+}
+
+/* 文字「築50年もの物流倉庫を大幅にリノベーション...」 */
+.text-explanation {
+  text-align:center;
+  font-family: 游明朝体;
+  padding-top:2.083vw;
+  width:47.7%;
+  margin:0 auto;
+}
+
+/* 設計図の写真 */
+.blueprint {
+  width:50%;
+  margin:0 auto;
+  margin-top:3.472vw;
+  display: block;
+}
+
+/* 文字「Relaxing space...」 */
+.text-relax {
+  text-align:center;
+  font-family: 游明朝体;
+  margin-top:6.944vw;
+}
+
+/* 文字「誰もがリラックスできる空間」 */
+.text-relax span {
+  font-size:80%;
+}
+
+/* 文字「元は物流倉庫。コンクリートの風合いを残しつつ...」 */
+.text-usability {
+  text-align:center;
+  font-family: 游明朝体;
+  padding-top:1.042vw;
+  width:49%;
+  margin:0 auto;
+}
+
+/* 最後の倉庫画像 */
+.last-photo {
+  width:50%;
+  margin:0 auto;
+  margin-top:3.472vw;
+  display: block;
+}
+
+/* 一番下のグレーの背景 */
+.last-backcolor {
+  width:100%;
+  height:13.889vw;
+  padding:0;
+  margin-top:6.944vw;
+  background-color:	#111111;
+}
+
+/* 一番下のグレーの背景内の文字 */
+.last-backcolor p {
+  color:white;
+  text-align:center;
+  font-family: 游明朝体;
+  padding-top:5.556vw;
+}
