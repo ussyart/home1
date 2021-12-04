@@ -1,0 +1,666 @@
+/* ブレイクポイントが1229px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:1229px) {
+
+  /* ●●●●の下の文字*/
+  .business-text {
+    display: none;
+ }
+
+ /* 画像３枚にカーソルを乗せると少し縮む*/
+ .box-img:hover {
+   transform: none;
+   cursor: pointer;
+   transition: none;
+ }
+
+}
+
+
+/* ブレイクポイントが1024px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:1024px) {
+
+  /* 「ソファ」の写真にホバーした時の処理 */
+  .sofa:hover {
+    transition:none;
+    transform: none;
+    transform-origin: none;
+    cursor: pointer;
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 「カフェ」の写真にホバーした時の処理 */
+  .cafe:hover {
+    transition: none;
+    transform: none;
+    transform-origin: none;
+    cursor: pointer;
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 「ソファ」写真の文字「倉庫のグランジ感を残したモダンなデザイン...」の編集 */
+  .text-interior2 {
+    display: block;
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 「誰でも利用可能な豊富な施設・設備...」文字処理 */
+  .text-institution2 {
+    display: block;
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+}
+
+
+/* ブレイクポイントが1000px以下のときのメディアクエリを設定  トップの文字が黄色に変化*/
+@media (max-width:1000px) {
+
+  /* 中間「ソファ」の写真・文字全部 */
+  .all-sofa {
+    position: relative;
+    top:-20.7vw;
+  }
+
+  /* 中間「カフェ」の写真・文字全部 */
+  .all-cafe {
+    position: relative;
+    top:25vw;
+  }
+
+  /* 中間「カフェ」画像の編集 */
+  .cafe {
+    position: relative;
+    top:-1vw;
+  }
+
+  /* 「Institution　施設」文字処理 */
+  .text-institution {
+    position: relative;
+    top:10vw;
+  }
+
+  /* 「誰でも利用可能な豊富な施設・設備...」文字処理 */
+  .text-institution2 {
+    display: block;
+    position: relative;
+    top:7vw;
+  }
+
+
+  /* 文字「Renovated interior（改装後の内装/施設）」 */
+  .image-text {
+    position: relative;
+    top:4.639vw;
+  }
+
+  /* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
+  .image-text {
+    font-size:1.4vw;
+  }
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-5vw;
+    margin:0 2vw;
+  }
+
+  /* ●●●●の下の文字*/
+  .business-text {
+    display: none;
+ }
+
+  /* 写真３つ*/
+  .box {
+    width:57vw;
+    margin:0 auto;
+    float:none;
+    margin-bottom:28vw;
+ }
+
+ .google-map {
+   width:100%;
+   height:175%;
+ }
+
+ /* 文字「access」 */
+ .text-access{
+   font-size:2.175vw;
+ }
+
+ /* 文字「access」の下「どなたでも来店可能。みんなのコワーキングスペース」 */
+ .text-access span {
+   font-size:1.342vw;
+ }
+
+/* 最後のフッダー部分（グレー） */
+ .last-backcolor {
+   margin-top:158vw;
+ }
+
+}
+
+
+/* ブレイクポイントが 840px以下のときのメディアクエリを設定  青色に変化*/
+@media (max-width:837px) {
+
+  /* 中間「ソファ」の写真・文字全部 */
+  .all-sofa {
+    position: relative;
+    top:-26.7vw;
+  }
+
+  /* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
+  .image-text {
+    font-size:2.042vw;
+    position: relative;
+    top:3vw;
+  }
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-6vw;
+    margin:0 2vw;
+  }
+
+  /* スライド画像*/
+  .slide-wrapper img {
+    margin-top:-4vw;
+  }
+
+  /* ●●●●の下の文字*/
+  .business-text {
+    display: none;
+ }
+
+
+}
+
+
+/* ブレイクポイントが 760px以下のときのメディアクエリを設定  紫色に変化*/
+@media (max-width:760px) {
+
+  /* 中間「ソファ」の写真・文字全部 */
+  .all-sofa {
+    position: relative;
+    top:-30vw;
+  }
+
+}
+
+
+/* ブレイクポイントが 732px以下のときのメディアクエリを設定  緑色に変化*/
+@media (max-width:732px) {
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-8vw;
+    margin:0 2vw;
+  }
+
+
+/* ブレイクポイントが 698px以下のときのメディアクエリを設定  オレンジ色に変化*/
+@media (max-width:698px) {
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-8vw;
+    margin:0 2vw;
+  }
+
+  /* top 「freeapace...」 の文字編集 */
+  .text-freeapace {
+    font-size:5vw;
+  }
+
+  /* 中間「ソファ」の写真・文字全部 */
+  .all-sofa {
+    position: relative;
+    top:-36vw;
+  }
+
+  /* 中間「カフェ」の写真・文字全部 */
+  .all-cafe {
+    position: relative;
+    top:-2vw;
+
+}
+
+
+/* ブレイクポイントが 679px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:698px) {
+
+ /* 「ソファ」の画像 */
+  .sofa{
+    width:85vw;
+    float:none;
+    margin:0 auto;
+    display: block;
+    position: relative;
+    top:10vw;
+  }
+
+  /* 「ソファ」写真の文字「Interior 内装」の編集 */
+  .text-interior {
+    text-align: center;
+    font-size:2.5vw;
+    font-family: 游明朝体;
+    width:6.944vw;
+    position: relative;
+    left:45vw;
+    top:-19vw;
+    display: block;
+    float:none;
+  }
+
+  /* 「ソファ」写真の文字「倉庫のグランジ感を残したモダンなデザイン...」の編集 */
+  .text-interior2 {
+    width:45vw;
+    display: block;
+    font-size:2vw;
+    position: relative;
+    left:27vw;
+    float:none;
+  }
+
+  /* 「ソファ」写真・文字全て */
+  .all-sofa {
+    position: relative;
+    top:-31vw;
+  }
+
+  /* 「ソファ」の写真にホバーした時の処理 */
+  .sofa:hover {
+    transition: none;
+    transform: none;
+    transform-origin: none;
+    cursor: pointer;
+  }
+
+  /* 中間「カフェ」の写真・文字全部 */
+  .all-cafe {
+    position: relative;
+    top:40vw;
+  }
+
+  /* 「カフェ」の画像 */
+  .cafe {
+    width:85vw;
+    float:none;
+    margin:0 auto;
+    display: block;
+    position: relative;
+    top:-1vw;
+  }
+
+  .cafe:hover {
+    transition: none;
+    transform: none;
+    transform-origin: none;
+    cursor: pointer;
+  }
+
+  /* 「Institution　施設」文字処理 */
+  .text-institution {
+    width:45vw;
+    font-size:2.5vw;
+    float:none;
+    display: block;
+    position: relative;
+    top:-31vw;
+    left:26.5vw;
+  }
+
+  /* 「誰でも利用可能な豊富な施設・設備...」文字処理 */
+  .text-institution2 {
+    float:none;
+    position: relative;
+    top:-36vw;
+    left:27vw;
+    display: block;
+    font-size:2vw;
+    width:45vw;
+  }
+
+  /* スライド画像・背景色全て */
+  .photo-slide{
+    margin-top:74vw;
+  }
+
+  /* スライド画像の背景色（グレー背景） */
+  .backcolor-glay {
+    height:70vw;
+  }
+
+  /* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
+  .image-text {
+    font-size:2.042vw;
+    position: relative;
+    top:4vw;
+  }
+
+  /* スライド写真のみのグループ */
+  .slides img {
+    width:80vw;
+    position: relative;
+    left:-1.7vw;
+  }
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-6vw;
+    margin:0 4vw;
+  }
+
+  /* 文字「access」 */
+  .text-access{
+    font-size:3.175vw;
+  }
+
+  /* 文字「access」の下「どなたでも来店可能。みんなのコワーキングスペース」 */
+  .text-access span {
+    font-size:2.342vw;
+  }
+
+  /* 画像３枚にカーソルを乗せると少し縮む*/
+  .box-img:hover {
+    transform: none;
+    cursor: pointer;
+    transition: none;
+  }
+
+}
+
+
+/* ブレイクポイントが 611px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:611px) {
+
+  /* top 「全く新しいコワーキングスペースの誕生」 の文字編集 */
+  .text-subtitle {
+    font-size:2.4vw;
+  }
+
+  /* メイン部分リノベーション説明文の編集（老築化倉庫をリノベーション...） */
+  .text-description {
+    width:85%;
+    float:none;
+    position: relative;
+    top:6vw;
+    left:0vw;
+    text-align: center;
+    margin:0 auto;
+  }
+
+  /* メイン部分の倉庫写真の編集（緑色の写真） */
+  .souko {
+    display: none;
+  }
+
+  /* メイン部分の倉庫リノベーション後写真の編集（茶色の写真） */
+  .new-souko {
+    display: none;
+  }
+
+  /* 「ソファ」「カフェ」全て */
+  .sofa-cafe-all {
+    position: relative;
+    top:-15vw;
+  }
+
+  /* 「ソファ」全て */
+  .all-sofa {
+    position: relative;
+    top:5vw;
+  }
+
+  /* スライド画像・背景色全て */
+  .photo-slide{
+    margin-top:60vw;
+  }
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-8vw;
+    margin:0 4vw;
+  }
+
+}
+
+
+/* ブレイクポイントが 526px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:526px) {
+
+  /* top 「全く新しいコワーキングスペースの誕生」 の文字編集 */
+  .text-subtitle {
+    font-size:2vw;
+  }
+
+  /* スライド画像・背景色全て */
+  .photo-slide{
+    margin-top:55vw;
+  }
+
+  /* スライド画像の背景色（グレー背景） */
+  .backcolor-glay {
+    height:80vw;
+  }
+
+  /* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
+  .image-text {
+    font-size:2.4vw;
+    position: relative;
+    top:6vw;
+  }
+
+}
+
+/* ブレイクポイントが 488px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:488px) {
+
+  /* 「ソファ」の画像 */
+   .sofa{
+     width:100vw;
+   }
+
+  /* 「ソファ」の写真にホバーした時の処理 */
+  .sofa:hover {
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 「ソファ」写真の文字「Interior 内装」の編集 */
+  .text-interior{
+    font-size:2.5vw;
+    position: relative;
+    left:39.5vw;
+    top:-26vw;
+    letter-spacing:0.5vw;
+    width:20vw;
+  }
+
+  /* 「ソファ」写真の文字「倉庫のグランジ感を残したモダンなデザイン...」の編集 */
+  .text-interior2 {
+    width:66vw;
+    font-size:2.6vw;
+    position: relative;
+    top:-34vw;
+    left:17vw;
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 中間「ソファ」の写真・文字全部 */
+  .all-sofa {
+    position: relative;
+    top:2.9vw;
+  }
+
+  /* 「カフェ」の画像 */
+  .cafe {
+    width:100vw;
+  }
+
+  /* 「カフェ」の写真にホバーした時の処理 */
+  .cafe:hover {
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 「Institution　施設」文字処理 */
+  .text-institution {
+    font-size:2.5vw;
+    letter-spacing:0.5vw;
+    position: relative;
+    top:-36vw;
+    display: block;
+  }
+
+  /* 「誰でも利用可能な豊富な施設・設備...」文字処理 */
+  .text-institution2 {
+    width:66vw;
+    font-size:2.6vw;
+    position: relative;
+    left:16vw;
+    top:-44vw;
+    display: block;
+    pointer-events: none; /* hoverの機能を無効果する記述 */
+  }
+
+  /* 「ソファ」「カフェ」全て */
+  .sofa-cafe-all {
+    position: relative;
+    top:-18vw;
+  }
+
+  /* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
+  .image-text {
+    font-size:2.9vw;
+    width:100vw;
+    text-align: center;
+    position: relative;
+    top:5.5vw;
+  }
+
+  /* スライド写真のみのグループ */
+  .slides img {
+    width:90vw;
+    position: relative;
+    left:-3vw;
+    top:-2.5vw;
+  }
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-13vw;
+    margin:0 5vw;
+  }
+
+  /* 写真３つ*/
+  .box {
+    width:85vw;
+    margin:0 auto;
+    float:none;
+    margin-bottom:56vw;
+ }
+
+ /* 最後のフッダー部分（グレー） */
+  .last-backcolor {
+    height:20vw;
+    margin-top:240vw;
+  }
+
+  /* 一番下のグレーの背景内の文字 */
+  .last-backcolor p {
+    font-size:2vw;
+    padding-top:40px;
+  }
+
+}
+
+  /* ブレイクポイントが 488px以下のときのメディアクエリを設定  ブラウン色に変化*/
+  @media (max-width:488px) {
+
+  /* top 「KOMESAN」 の文字編集 */
+  .text-komesan {
+    font-size:17vw;
+  }
+
+  .google-map {
+    width:100%;
+    height:260%;
+  }
+
+}
+
+/* ブレイクポイントが 435px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:435px) {
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-16vw;
+  }
+
+  /* top 「▽」 画像の編集 */
+  .triangle {
+    width:8vw;
+    margin-top:1.2vw;
+}
+
+}
+
+/* ブレイクポイントが 431px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:431px) {
+
+  /* top 「全く新しいコワーキングスペースの誕生」 の文字編集 */
+  .text-subtitle {
+    font-size:2vw;
+    width:80vw;
+  }
+
+}
+
+
+/* ブレイクポイントが 400px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:400px) {
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-18vw;
+  }
+
+}
+
+
+/* ブレイクポイントが 375px以下のときのメディアクエリを設定  ブラウン色に変化*/
+@media (max-width:375px) {
+
+  /* top 「全く新しいコワーキングスペースの誕生」 の文字編集 */
+  .text-subtitle {
+    font-size:3vw;
+    width:80vw;
+    position: relative;
+    top:-72vw;
+  }
+
+  /* ○ボタン */
+  .index-btn {
+    position: relative;
+    top:-19vw;
+  }
+
+  /* top 「SCROLL」 の文字編集 */
+  .text-scroll {
+    opacity: 1;
+  }
+
+  /* top 「▽」 画像の編集 */
+  .triangle {
+    opacity: 1;
+  }
+
+}
