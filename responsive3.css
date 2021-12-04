@@ -1,0 +1,73 @@
+/* ブレイクポイントが1073px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:1073px) {
+  /* トップの文字「The distribution warehouse is...」 */
+  .text-top-renovation-of {
+    font-size:2.5vw;
+  }
+}
+
+/* ブレイクポイントが599px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:599px) {
+  /* 一番下のグレーの背景 */
+  .last-backcolor {
+    height:17.889vw;
+  }
+}
+
+
+/* ブレイクポイントが560px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:560px) {
+
+  /* 文字「機能性だけではなく、見た目にもこだわりました...」 */
+  .text-functionality {
+    width:70%;
+    margin-top:4vw;
+  }
+
+  /* 文字「築50年もの物流倉庫を大幅にリノベーション...」 */
+  .text-explanation {
+    width:70%;
+    margin-top:3vw;
+  }
+
+  /* 文字「元は物流倉庫。コンクリートの風合いを残しつつ...」 */
+  .text-usability {
+    width:65%;
+    margin-top:3vw;
+  }
+}
+
+
+/* ブレイクポイントが560px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:560px) {
+
+  /* 文字「機能性だけではなく、見た目にもこだわりました...」 */
+  .text-functionality {
+    font-size:1.3vw;
+  }
+
+  /* 文字「築50年もの物流倉庫を大幅にリノベーション...」 */
+  .text-explanation {
+    font-size:1.3vw;
+  }
+
+  /* 文字「元は物流倉庫。コンクリートの風合いを残しつつ...」 */
+  .text-usability {
+    font-size:1.3vw;
+  }
+
+  /* 一番下のグレーの背景内の文字 */
+  .last-backcolor p {
+    font-size:2vw;
+  }
+}
+
+
+/* ブレイクポイントが430px以下のときのメディアクエリを設定  トップの文字が赤色に変化*/
+@media (max-width:430px) {
+  /* 文字「Renovation of distribution warehouse...」 */
+  .text-renovation-of {
+    font-size:5vw;
+  }
+
+}
