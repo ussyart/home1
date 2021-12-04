@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport（レスポンシブを可能にするシステム）を読み込むための<meta>タグを記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプル</title>
+    <!-- cssを読み込み -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- responsive.css（レスポンシブ コード）を読み込むための記述 -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- jqueryを使えるように設定 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <header><!-- ヘッダー部分 -->
+
+      <!-- top画像 -->
+      <video class="top" id="top" src="Plant - 97898 (1).mp4" alt="コワーキングスペースイメージtop画像" loop autoplay muted>
+      </video>
+
+      <!-- top画像の中のテキスト -->
+　　　 <h1 class="text-komesan top-text" id="text-komesan">KOMESAN</h1>
+      <h2 class="text-freeapace top-text" id="text-freeapace">Free space renovated warehouse</h2>
+      <h3 class="text-subtitle top-text" id="text-subtitle">全く新しいコワーキングスペースの誕生</h3>
+      <h4 class="text-scroll top-text" id="text-scroll">SCROLL</h4>
+
+      <!-- top画像の中のスクロール印（▽） -->
+      <img class="triangle" id="triangle" src="https://lh3.googleusercontent.com/xhFIkssPi_1Vrba4BDApkiDpyxkS1NtORm4xkk1Nm_K154_M1v7B4ZnUoVNnUG9fMuE4-Svc32smSUxoYHjAjMnKQYsh_ueligIeUYwwC44Pf_Fc7GD8I03Yu_L3IKDIVFH7InOsFZhLsqQ7sI9xgMw2nSih4AmNqfn-qE8x2l6cXMafP21ZLULfAg6vLTiORbAxEmYA4T8_kURGNuUswUVwMCBTJVEJi5IqC2RVtFclK4AyGdqe2YSeXJBhjoNMkPijXQJF-icDurZR7e0xxbCF6QGmozk4ao3amJM_siRi4GwikTUAiLm6b3gcsRcBh0o_0UDERiz1cYlhyPn-KWAddvGMhGYwaBcIzU1HEDdll-2RlyU6YRBf92NeRtJeFbbRyzUTjqZxORVo8_iFw8o3y5FK-nLVq2qGA0KTnIG_7Koox1ufS-vnXCZDybHrLp0uuQbEa6z-NZ5A67qhnqa0u06rOA9oHWf1LNqXzW2NAiKHw3tTq-INjUci2d7X7iP_j2tnpdirwPN5J9Xn2m_JUvu7weAuZbthgpMWhdVrvyfU3238k9uMJWi3cSQtB2dYWCxMTNJsDEnSTAXuL4fisZV0VWXYWwLq3agwVbkKf0B0deeBwK3mpIO6uxIm2aunR34HUhB2uhZp2nHyv1kOGn7v7MDLRSCca8WrYIpLNCnowcz5gqvMNOagb4GQgKKpF9U7sDJdeJ1FN2uLbbA=s500-no?authuser=0" alt="スクロール印">
+
+　　   <!-- メニューバー -->
+　　　 <div id="navArea">
+
+        <nav>
+          <div class="inner">
+             <ul>
+               <li><a href="#">Top</a></li>
+               <li><a href="#circular">Introduction（紹介）</a></li>
+               <li><a href="#sofa">Interior（内装）</a></li>
+               <li><a href="#cafe">Institution（施設）</a></li>
+               <li><a href="#image-text">Photo（画像）</a></li>
+               <li><a href="#text-access">Access（場所）</a></li>
+             </ul>
+          </div>
+        </nav>
+
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="mask"></div>
+
+      </div>
+
+      <!-- メニューバー ここまで-->
+
+    </header><!-- ここまでヘッダー部分 -->
+
+
+    <div class="mein1 set-time5">　<!-- ここからメイン部分 -->
+
+      <!-- メイン中央の文字「Circular-Renovation」 「全く新しいコワーキングスペースの形」-->
+      <h1 class="circular" id="circular">Circular-Renovation</h1>
+      <h2 class="text-newwork">全く新しいコワーキングスペースの形</h2>
+
+　　　 <!-- 倉庫の画像（緑の写真） -->
+      <img class="souko soko-imgs" src="https://lh3.googleusercontent.com/bmuIwvsg4ZleXtaNb6ha885SloUrDxnbSx4KYeFXFJ7IEgDM0OMcB2jMLulRE9AwOA1jpSiJOJ4__3HyX-_FKcaaz4sqW9WyzPtmweehZNZhFIOY8P5ah2ZSOEaIbBGRWl4HfDlkaOO9yzFKREuHS_CNNCh51D4aZtUo9Rbc7QR1szzMjiao04s82ZWtYiELOIGRyqk-jpf2UFUKdEkAxTimHgF-hizbWjD_l0b5mbDPCAbzPX2ez8JKBmXDteqZjMci4Qu3J9I44nK647E91D45NN5D79eCsgmdnJw9-xsfr2ggdU0W6MYui7rcubnnA_PR1cMFDdVOMqkwdUsgl7LD1iGVlOPR9-kx2PIYp0qI7zmHHQN0bZGvH3RqzmaM9k2Lcx1UtGPDD3uDstqnNovkJ4yAPyZYtKV2erVrcX8-MxfSWK6gFaVcp9rItwkInKf9T8XxJyVpwtwh9eodpqQq4cw4b-0VBSZ5SgqdXktpSSRirjPTwCBL88wkkw97XsavSM9NhPoyKI9xUu0c0EuubXSD8ALm8OiJparbzh1KiiRHFK6GgJA_6__JmgfLU9EwaHRciysI3mq--HM-THcnp72PPBl1vEIJVllGRlOBhwpooKOSIXuahU7PraGV8k411932QFDQJ9PQHXh4vlBbKLbjkccZUSS2EtOcThCOjRnZNxqmw2umzbKlZVHsAe5hK-1ssUkP3x4O3JwM3Vk=w860-h550-no?authuser=0" alt="倉庫リノベーション前">
+
+　　　 <!-- リノベーション後の倉庫の画像（茶色の写真） -->
+      <img class="new-souko soko-imgs" src="https://lh3.googleusercontent.com/-OOvyCgOAMlIq1t7_GuaYhTl4VqHKl8LO9n1EskBUn5Ne4pdJJi-fHCJ9oqip36s3JX-k2VKrD39nrRhEhJsvYJr2y8N6k_dZ0ANXGaLy5cTo3vvHgFO6DvR_KXDRqjOiCflIWlmA66cqnyadzGrLSRnn4K3_qw3YtWlEeF_XAUgRmKC4bIQuscTicJeS2lLtimudG5OZrNs_8WBywO2FmOfg2V8NZeaWzb1ILqTYC0B_lTeLPxPce1hhzR8Q4k3ln5_-z_LPrWdkWyUmuKnqfkF1NFxyLqqDn7RKpbx8tlPNuhx-xoegOgJIrP3yL20n58H8tZInwKMDEfrekMOsYh6IeURQBK2LWgsUzax8zigAMtoYhn73orrakxdY-F_5Y5av38v5TU7zXCkN-nZpaZROIgDQcMjWF8H4AmQTCRUwie3Haa6aJUn67HCITY-2bBC_KIAWtkyKmAji2sGQYxtaETdSxWsTPfpDfdbliThLjsk5_YOkVAIBXul_JX_Zqh3xZ-aET0XLViipoe-OZWyWB-4ER7cHwEM5TqyJHfoEqjwZeCIIs6ChBZKXFRMUG8vCiu6GHAdwcR7_87rRdKtRmW2LG-5XLK9a8GUGG4G1-zTr3_5dlv85sVgxO7Fo6yni3_T80E76PiKg9LW76m7eU7Th55jpxg8nV0iSAqocWIEglvweOKyL4EQIkvLtI_x1tbe_uIEJFtxQaSZM64=w1080-h720-no?authuser=0" alt="リノベーション後の写真">
+
+      <!-- メイン写真横の文字「老朽化倉庫をリノベーション...」 -->
+      <div class="text-description soko-imgs">老朽化倉庫をリノベーション<br><br>倉庫は、荷物の保管や運搬の機械が動くスペースがふんだんにあり、広さや高さにとても利点があります。もし、オフィスにリノベーションをするとすれば、レイアウトの自由度が高く、普通のオフィスでは実現できないことができる可能性は広がるでしょう。新しい倉庫の利用の仕方として、あらゆる業種の企業から注目されています。以下では、倉庫のリノベーションオフィスが人気の理由を紹介します。
+      </div>
+
+      <div class="sofa-cafe-all">　<!--「ソファ」と「カフェ」全て -->
+
+      <!-- 中間「ソファ」のエリア（slideDownした時に影響を受けないように設定）ソファエリアを囲んでいる -->
+      <div class="sofa-class">
+
+　　　　　<!-- 中間の「ソファー」の画像・文字全部 -->
+　　　　　<div class="all-sofa">
+
+　　　       <!-- 中間の「ソファー」をクリックすると「内装ページ（２ページめ）を別タグで開くように設定 リンク先を書き換えられないように設定 -->
+            <a href="file:///Users/usuikazuki/Desktop/%E3%83%AA%E3%83%8E%E3%83%98%E3%82%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3Web%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99/index2.html" target="_blank" rel="noopener noreferrer">
+
+           <!-- 中間の「ソファー」の画像　内装 -->
+          　　　<img class="sofa" id="sofa" src="https://lh3.googleusercontent.com/8clvEoms_qIE9QnbPG8NQ74ineco8tEV50ygWeEqQvlQwbfq8DutjAfgoFxbXYJ8ZGfVEslV2nY0K08n8SPBhkkrkUXc1fqUH19-aTfDcjjhYO6-gQ1Mw2VylUblubfsJwLdvQkGF9sxsMMclV0lV0xtfhKuMnkZv1BFjhXb17lgkfdeNVIsZRTLkRQXr3LkaAOApl-3LNI1aXjq90LmqjQdcdVn6ufhwtjUL6diAoEAR9cm-lX197A4_F2buAm94VnIrmtk47ohYvSFDceDlqfcoQUkG5Me36-OgGU5LODip6blApb4ZH_OuqlZlbjpr96qXyjsQacnZ4cA0tkTjq2czyoOjwDcE9WGVFjx9O23sctupsvXj6Q5woOtGwUWoFUpVjjQ_-3OrPhpt0kSwMzdZteVbgHZ1OEkW0DCpEyFh10fwxCSB6JHMzsAemVXDxV6WbfCFL6b0nbK_al8PSsIaKOUsCpxs5s-JlBXQ3UC1V3Bizp-w7o_R5Qv1QnZ6RWZPBFOEufw6WGfwimUjlhBroP34nbnsRD1EQASwdb3_D9IQLGSQ1MLjCCXGbnwVqOjjCatfuEFfzGBzkWsmdv9AFRlyr8nIpD7OmQHNrhB96acwXEBFuJVkQdk_XFiSa2T8L6EjbJQ9rMeyfAOqMILZ9lAd4UJdqmB-vGEhuf6jo0-nh53R2icVyNsq3JEO_jqKZjMv9YvoYmWY1w9v6U=w1080-h480-no?authuser=0" alt="内装イメージ">
+　　　　    　　　<h2 class="text-interior">Interior<br>内装</h2>
+　　　　    　　　<h4 class="text-interior2" id="text-interior2">倉庫のグランジ感を残したモダンなデザイン。<br>仕事空間だけでなく、カフェなどの設備も充実。</h4>
+
+            </a>
+
+　　　　　</div>　<!-- 中間の「ソファー」の画像・文字全部　ここまで -->
+
+      </div>　<!-- 中間「ソファ」のエリア ここまで -->
+
+      <div class="cafe-class">
+       <!-- 中間の「カフェ」の画像 文字全て-->
+　　　　<div class="all-cafe">
+
+         <a href="file:///Users/usuikazuki/Desktop/%E3%83%AA%E3%83%8E%E3%83%98%E3%82%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3Web%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99/index3.html" target="_blank" rel="noopener noreferrer">
+
+       　   <!-- 中間の「カフェ」の画像 施設-->
+　　　　　　  <img class="cafe" id="cafe" src="https://lh3.googleusercontent.com/9cJTV7tDh459Lg42r5-5qP-s6MRBtPMisZFe9WQIIol20u55jSGvilkFAsg_qCZxsTXyUZ5cQXX39RhovKwjSxoaj2_DQVahTQ3w9c_YA7mzgxM4I1aM1_t05r-w17gS1skDB8fdshPsBj7u_aqXzmbceIH0gWw43AdP7Hka2HzqahKXk1B1NDqIsPoxykfQOn2gpl3Dbw2aSF_fCoxjqmc7Lk_5QlNOd8pfj2yACAkQTw81_vvcK1k1sEWL54NppEcBKJBqe7OIfj_M7nN6Bwmr97MgRojzz-fgRZE0Z0e4m51d1yct2fkt39NHfKZkrXjoJMjl4dkknf1vb9TlLyKTv7N78Exk101XEKqAT-Wl0cLIA4T9uevqW8hTugpDnyhjsUeG05VOzw67z_KhNxXndIuXICq3RFDBQYyoKqbuRbqyHi69ROBDVMYXV6brXJfVfNTHl8RFZr9sh_jnrfoZ8HL_wYEl8SyrAtjQjyMLDkP8-uz-h-p7NyaP7OUhzQPxufg9WyS7UjsFCmqaakJ-8veHOOnTwwqeXwuayYL9amflbXjsZTBYNEJOTzVyYB3vaVHDdZmxGeDqjiMocBUQNIjlbdpuasePXghgm-2mJGUMcuY4Q9ChBHwb8IphCMNZsuoAb4sUgjn2XsjDFx10KzzssOKzswxSjoIeVxT2DiZlwyaYemWdTfgwPPjcnpD4M7C7wHUcScjoXgPIodk=w1080-h480-no?authuser=0" alt="施設イメージ">
+
+　　　　　　  <h2 class="text-institution">Institution<br>施設</h2>
+　　　　　　  <h4 class="text-institution2" id="text-institution2">誰でも利用可能な豊富な施設・設備。<br>DIY工房、撮影スタジオとしても利用可能</h4>
+
+         </a>
+
+　　　　</div> <!-- 中間の「カフェ」の画像 文字全て ここまで-->
+     </div>
+
+     </div>　<!--「ソファ」と「カフェ」全て -->
+
+     <!-- スライド画像・グレー背景全て-->
+     <div class="photo-slide">
+
+        <!-- グレーの背景色（写真入れ替わるところの背景色）-->
+        <div class="backcolor-glay">
+
+          <!-- スライド画像上の文字-->
+          <h4 class="image-text" id="image-text">- Renovated interior（改装後の内装/施設） -</h4>
+
+        <!-- 写真のスライドグループ-->
+        <div class="slide-wrapper">
+
+         　  <ul class="slides">
+　　　　　　     <!-- 写真４枚 activeクラスがついている画像だけ表示させる-->
+               <li class="slide active"><img src="https://lh3.googleusercontent.com/F4B4Ug3mDw_SpSXy9C07D5Pizdw6q1xQIU5-UfKvTdTrCGZkYXRemCZ2J5TCDoXh_ZoiSOQaQXvRBYJ3_bR8BQ5ug2GIwB54EbOHVoCf3hEP9FDH9wGAohs2RtQ-x5f0orQ5AFF4VkCT2JuF_SxzMXg4JUHbobUV94OhLQn5n9IyHNKEa4VoUfvnAVbbOLvN7Rz41JKMXo28e4FbRnhw-2PdfWKNVePZxbNOQ77yvJiJYcLi54W4UTUSHwAfg6SEvYwpWy0GXsn10XJsaOC4skOfsFCaGitmgk4LpwkX3VMpYTS3aMb5QAzk-yJ9v_ExzTk2NXFfJJDQD-g4sC7JlAulYyv7qMuByOAV58AgOhTL8LM-WCz4snd0P8jyqgQiCRWvRNtvo9x-pBn6tupMaO65VoQf8RzAztKp6jX8Vzt31eLLzRu76gGTGjGdYK1xF0lZPJm6rsrW14m_HsTyxbYv-69C90gd-z7Yd8T_FUPPY8M62B_WPeETXO4Ew_E5wSvZJqb_mpnvsdJH1nZeqSOnppLJoO6yox7jFhEgR1xrsiHugC-PvaJ-EzQhpPhv1SMeaDMYJt2KUjRqy6oapm87fn_nZX9PkRztiF5zueY7dimimmPjaF7akyOfCOVK-cYcwTsHMsKovwwL0i8z_wvI7_pYhlwOwtfOOrv4QwI0gNvQTkLFDB6-UfPlncAnRlNan17IywnMrIfEtf80Fn0=w1080-h608-no?authuser=0"></li>
+          　　  <li class="slide"><img src="https://lh3.googleusercontent.com/Y-C-BdUWwNq22cJbe5elU5sSXqAk-CzmX_MaGxhmmNenU3dBzlkZhnjiLq2iwF9SSD5YbK3oBdVHhIgO46LKMNAYEZWRA0C-lD6ixHW_AKq0zRvBkRdMESv28dw_9BOoJf7dgAEweORcWEq1cqdYPtix4J2IvnzreYAlZZnM9lfbGXDHLdLfbuJzPHmDBYZDLiEdwN27E-f9wgpg5ClN-JXAcHyjBkujxuwnebpe0H3kb8dYoDUpHpF_vQkXnNktYyXV9UdS1qyWkVOBQEdwJA_jJj6quIZSswCW1B5apVVJIZhp9dH3AJ2m0MbHb3PwN7Ej2VfId9gUl0yAXPaRFdczW7UHNtMG1MYJT6Pn52MyIAq4TCzOC2fkPTKR99Dcyj7c7SgXVQh-NAxe1IsuJ3NB8YhSXkCT5-RRhppA6kIczd5RIGBfFeLwaox07a9cJfeLV_CK_-1TPoZoiIoqjQL4mKUXPMOFuxA16T85hiaLAZ2v7I_VJhpeK6WBUlBxYYzhQpJWS9WI2j6aBlckhBS0zErBSeELMzgHbw554f1URPIPIetxFGW2WJl41ZyoOw8M2iJ5UDWQj4VWKmXQ4D_eMXkMvbDZqOr2kXaF7okoERvAUm4mWwLcYvta4L_Uovmt4Ja0sFFyUAETtBe48FPfgfgfk_FKggyVeVTi3EPrVDx71ryyqrhPkidn9Nog0M4msqPSzZmHMqJeCAs1NK4=w1080-h608-no?authuser=0"></li>
+          　　  <li class="slide"><img src="https://lh3.googleusercontent.com/OOAaG_MwhS75oWeWf-UKz7j2TM9g-_151GBKd_vhVyEv6Wij-yUlNuds91wOF2hRVAIRHfW5N4n4U2nSf_-Czhqa9zMgsexx5E-YJdXxXwVAiTW-bZZVqqAxnpg2K1REYXJTJw3aYExeMc6PmuFH064Sz8_m8cPBQFmVSkGK1JH2frdy0PQLA9PiRgnMPVl688hUXxh1Ed6kum_vT2YLbWsblmy1HEc0IJRzE7YZc97nsQhqBz-BWVQmJL_I9890FB-jpbe-e1dxMg7OdH_0uxTRbjvneCYxI9hj05nacVuOJ5ge5FX4_RlCO9LVd1UDE16wK5sdBayAFfrsCU_yIu5-60AoR0ywZwP5WNwj-4CuDVQ8Qxd_kDRKIdDUQlaVSwLIxwFQWEtnVhXlbmQlsoV98ZpJZgx-K30FWWcGSF7H2Y_G1I8l4KEs0M-lD2u_YMkxRNdBHVbyiFn1NLKoVW6kvCZCCuLaqvAqQXXNcceVFx_6UY0FNQsLbcUN4k7qumeUNPNqElBx9l2xb_Q5Qc8mt4_os5EzMzdbR4pQSLesFNAMmGDsrWx2VEjQoRK6kXvjM6Ig6ticzux_6Xw9LUeoiGNT7ke-tT6A758M6i87NjT2oQWoavZTjau8cdoT1VPo7I8-x5y9gWffMlLGdVesSFdAJHm80140ctWvSN2oIvGqCz-GBRsG5La6v6KRlwdBQ10AGRPTgJTlbf7Akh0=w1080-h608-no?authuser=0"></li>
+               <li class="slide"><img src="https://lh3.googleusercontent.com/tSYpROBBgUjNIoXPco17XVJLRHK6rbeTGT9m36XtHdgnAj2TuTYTVYAQ23wE4UyTHrLH12Wju5hchxT21QDhbukdLJ-3R5fCCodlm32h1kYb-wMtWAAae1PJi4Ln_4DiyW3KL_pG1wc1iyp52d1jVdL8mMneHxZXxo67FHNdUw6OsqEWZ8iNLrtC0Ot8sXQY7_CNq20wRV_QJvzQWTZwdmivITA1RUlFINeYwax1JHpkh0QcQPkHeOX43jm8DutpjbAejnCIYyqC0mhlfks8Qc_VsQS9ou9TWW-InDzJZj-V2ukzAOCpU71LAY0DBaa3_XiCHFJ9XRwtJWVR-PHMkv81goTYvftpFWRkV5VjwuJCx5KT6LvrFoSXfPSdJUHd5K8BfbRYm9WaEQqQo1x-yu4VJKoqsF1P6AcTVBea1_qdQ699vS5aKMbWDFKZXt2mEyzXBjXsr_2CBeYNlc3mGT7bHaZ9nR0So40ETL-sAWsG7vpe_hcfuY8NiusEQWU-n8uVIw0Oty7hT3ppF3eDpJMXUeQAOeypFpT6dYwBg1b6-5pFjoMVl3G_ZTHCrsyaAtLNwq54JLfJLlND06BTyoYmnijfrfktjtFPjBCMjKTP_0J3kwm6092imAEDfwrp2hPZCS9BijDtWGXnfDbcmVwUlh1dRKq5N8SJ5u6GSAjo5CMlejOPT-p99d_xBOgGb8mkpBBR4XTj7ZrzWJxqHQs=w1080-h608-no?authuser=0"></li>
+
+         　  </ul>　<!-- 写真のスライドグループ　ここまで-->
+
+        <!-- 写真の下の４つの○ボタン-->
+           <div class="index-btn-wrapper">
+
+             <div class="index-btn">●</div>
+             <div class="index-btn" id="second-btn">●</div>
+             <div class="index-btn">●</div>
+             <div class="index-btn">●</div>
+
+           </div>　<!-- 写真の下の４つの○ボタン　ここまで-->
+
+           <!-- ●●●●の下の文字-->
+           <h5 class="business-text">ビジネス・授業・リモートワーク等、様々な使い方が可能。<br>カフェスペースもあるのでゆったりとご利用できます。</h5>
+
+
+        </div> <!-- 写真のスライドグループ ここまで-->
+
+      </div>　<!-- グレーの背景色　ここまで-->
+
+    </div>　<!-- スライド画像・グレー背景全て-->
+
+    </div><!-- ここまでメイン１部分 -->
+
+    <footer class="set-time5"><!-- フッター部分（ページ立ち上げから５秒後に表示させる） -->
+
+      <!-- 文字「access」 -->
+      <h3 class="text-access" id="text-access">ACCESS<br><span>- どなたでも来店可能。みんなのコワーキングスペース -<span></h3>
+
+      <!-- 地図や会社住所等のグループ -->
+      <div class="access-alia" id="access-alia">
+
+        <div class="box">　<!-- 写真の範囲設定 -->
+
+          <!-- フッダー上の画像　左の写真をクリックすると、米三のお問い合わせフォームが開くように設定 -->
+          <a href="https://komesan.co.jp/contact/" target="_blank" rel="noopener noreferrer">
+
+　　　　　　　<!-- フッダー上の画像　左の写真 -->
+            <img class="box-img box1" src="https://lh3.googleusercontent.com/7FeQsI1XdNkfGaqCkDL0qhK-T-HhrhTXUAhwoQwF29iUQ37QArAQKp97VReh4oxWDOsw8yWBLw_m9TvXQFziTACzpjLunl7CxYLdkIcdK8oom4iVOqqaTJNvtZM99ZbTakv0Qr1gN4oHa8R4xnzHKHZbMIT0YMzICVLGDTR6miLXAJ2zO1bNhVU8QfsVDblrwY1ClH0olySJDWoBq1e5eeywoUVlnudrUI9xxKa3Y-9N21uvtL8L-A7T5y7B2QHKmmSL7XrQuYzAgxkQmY1VvheqoeHkIMrhp7U3VHDu7GcAz_DxHaCuoJLPfE_L-iNeTzqVRjlSlZP2Bgw_xNj3dVOhVNG2YIapl8W6Gds-271UxIPKckdBYuxlhSI-dnKH89zETeFbZCcnh_qG5wYa0xUUS55UKSU6mcgJqw9UEcUPgOljh-WQoKIq2gibJ90G3HzYiBjoHFRxFoZxVumC1HpbelzB-hA1gczfx0twNX_c9uyL2MhXffVxzoDnHGOPsd2EdJCDiliMBqweHY8kZsT5TqQD6LdHLdRklmxZAXrCfp3bS4YyWZ2rQ7GgZ3oJ6hDClEOvSCFfUUT00GX9vfn6lZMNSUMKXJokTc5R_Fp99mScQkubwusYR9Lb2NR1amnvFsPORGrzWQQTb59IAxUXvVKuF4mDoZv_V2CG9V1sRapqyzjDpjC59VO1M_CqlsGWfmBANFhLxeOyEJCM474=s794-no?authuser=0" alt="会社ホームページ">
+
+          </a>
+
+　      </div>
+
+        <div class="box">　<!-- 写真の範囲設定 -->
+
+          <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.8582851744886!2d137.24477391528708!3d36.701943179969014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff790b7da91cc37%3A0x667a447b685f9f46!2z44CSOTMwLTA4MzQg5a-M5bGx55yM5a-M5bGx5biC5ZWP5bGL55S677yR5LiB55uu77yZ4oiS77yR77yQ!5e0!3m2!1sja!2sjp!4v1638418775754!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+        <div class="box">　<!-- 写真の範囲設定 -->
+
+          <!-- フッダー上の画像　右の写真をクリックすると、米三のイベント情報ページを開くように設定 -->
+          <a href="https://komesan.co.jp/news/" target="_blank" rel="noopener noreferrer">
+
+　　　　　　　<!-- フッダー上の画像　右の写真 -->
+            <img class="box-img box3" src="https://lh3.googleusercontent.com/C92gt1eR2IN0FUlohxiJxN_zdiNSh-5E8zK902ZuzsylM4DEfM53CXfqDbLuhZJ87D1q79yok4vRVA38Ml5vZAOcIXK3uUkbW6vyZUvjCF_VWdTUhBmS9tamVuBkl4ET9Uh-0cp_n2epkYmq2t1cs4vyanV6sJzWWzutz34QYF7WWP8TQGnsa5PUUrrFbwO4Dy6-cwAdI_NGAsEht4-QvN5q4HN7MPnmYOB2_jvZFX0LYDQZAOfgNrVea5C_Hr7pwHiVXMKP84j3hPAeC3ZYQyq8wqEdyUqV9mpsXg306Im-ZGiC_YcZ4ojdoTzMZv6EsvPShRdWz2BASp7DnGYEUEogCu004V_HEfR8JYZwgfmXext8AwFDjVd5pJJgL9kQ-IvUZJLdcNuxwLw98uCrmhpkZnwJ4PcoQFbGol-buMBMAnVpeM6BMDvvy3XxjbueHeiJCJcTacj79t431Ge-UEwobSkJ2tClIgTO2zoLFUGd-KNfR-zOopiwSwBr07DDxJGnGrvq2k7RHB2ehv7krYFG9W_7NtOAfw_QqqqwWF0VAlJWt6Bgis3V4QL70JMMQLbYFwhzSP3pgdButNws4PVgbWiqohuRi8JEJ_MqDk86UVBC2haBzT-EhnPmn2pUBXFszMFyAfAmjnVgKUlqUAj1kmsY1mQoqLPa0Ts6jo5258xYf-gdgJzua3EoBgX4L5Xl0hSdc1S8NVQkwUvQoMM=s794-no?authuser=0" alt="会社">
+
+          </a>
+
+        </div>
+
+      </div><!-- 地図や会社住所等のグループ ここまで-->
+
+
+
+　　　　<!-- 最後（一番下）の背景色グレー -->
+       <div class="last-backcolor">
+         <p>株式会社米三<br>Copyright(C) 2021 KOMESAN. Co.,Ltd. All Rights Reserved.</p>
+
+       </div>
+
+    </footer><!-- ここまでフッター部分 -->
+
+   <!-- jqueryを読み込み -->
+　　<script src="script.js"></script>
+
+  </body>
+</html>
