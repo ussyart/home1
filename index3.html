@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>サンプル3「施設」</title>
+    <!-- viewport（レスポンシブを可能にするシステム）を読み込むための<meta>タグを記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cssを読み込み -->
+    <link rel="stylesheet" type="text/css" href="stylesheet3.css">
+    <!-- responsive.css（レスポンシブ コード）を読み込むための記述 -->
+    <link rel="stylesheet" href="responsive3.css">
+    <!-- jqueryを使えるように設定 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+　  <!-- トップの動画エリア -->
+    <div class="top-area">
+
+       <!-- トップの動画 -->
+       <video class="top-video" id="top-video" src="Cup Of Coffee - 3158.mp4" loop autoplay muted>
+       </video>
+
+       <!-- トップの文字「The distribution warehouse is reborn...」 -->
+       <h1 class="text-top-renovation-of" id="text-top">The distribution warehouse is reborn as a fashionable complex.<br><span>物流倉庫がお洒落な複合施設に生まれ変わる</span></h1>
+
+       <!-- 文字「SCROLL」と「▽」 -->
+       <h4 class="scroll" id="text-second">SCROLL<br>▽</h4>
+
+    </div>　<!-- トップの動画エリア ここまで-->
+
+    <!-- 文字「Innovative fashionable...」 -->
+    <h2 class="text-innovative" id="innovative">Innovative fashionable space.<br><span>革新的なお洒落空間</span></h2>
+
+    <!-- 文字「機能性だけではなく、見た目にも...」 -->
+    <p class="text-functionality">機能性だけではなく、見た目にもこだわりました。どんなに機能が良くてもお洒落でなくては意味がない。使う側にとって視覚的にも楽しい空間を目指しコワーキングスペーツを作りました。シンプルでモダンな空間。この空間でぜひ、日々の仕事をしてみませんか？気持ちが変われば仕事ぶりも変わってきますよ。このコワーキングスペースは誰でも利用可能。写真スタジオやリペア部署もついています。お洒落な写真を撮りたい時は、プロの写真家が撮影をお手伝いします。家具が壊れてしまったという場合は、家具屋ということもあり、リペア専門のスタッフが在中しておりますので、修理も承ります。</p>
+
+    <!-- ヘッダー 設計図写真及び中身 -->
+    <header>
+
+　　　 <!-- 写真１（一番上の写真）のエリア -->
+      <div class="photo1">
+
+        <!-- 写真「フォトスタジオ」 -->
+        <img class="iarehouse photo" id="iarehouse-id" src="https://lh3.googleusercontent.com/uPtbiS2HctN1dUoFelMYYsdWdMxt8qZnmn3HmyJEs-THuWFYi2NdB6z-Ov9rzjC5xr4xBYsGJ4Ykwf4WwNNqaudbjRjFnsUHBqmpZXXpgqSFstpjUlDIksdMW3kYAG6w3hBr4cA6JTzorVVvaqgBRzQUT8-7IPZnjhwifGhynaH5Rt2Hxx2WpJM3NPwmp4J-WtptvD7bHRivNkuMZY29aml0HCNT0trxzew6Bh7VcNLzleKiD7oucISnbsOm4awoxiIolvhK_2WgYEzp9dQEMLFxrbvFKLkEnKi1IT6ICwD2Z19L7DCPknOv0Xl1rjckdQee-MuL-R4j9QwtbapNiZMzC-4SzSwCU_74Goa7L1lhzreidaRSvLZdfk1Yv9jLd10npJal1-_oYP3KSWyRAxhBzUjeBw-1HA4HbsTiMm7rTY7WWjkZ-4GlwLMeMJ6odExS9Rlk6LnpnuQA38Ru1rp4fv4go9mHztQADt5BRYkIQzGrAARGt2sOx2VbWQgapbMXxC1duqVClAsJY6rLAYfcqUdJlTdWofqL1Yta_TGrLJsylSTAjkn9q068jJd6l_3o7VtivnXOGAM_2O1fEmLktOKcAjoMtlO17qIViUqEFpmv16i168OHXMmKWLiQJTSJbaKa6qXPNhBmrSQEp-2IlB7uGuMWAdQB1rQQiQJEIEcYA5NqCsQ6oacjY0PIDiz91hJuyk1rTi8IBQT_L7w=w1080-h607-no?authuser=0" alt="内装">
+
+      </div>　<!-- 写真１（一番上の写真）のエリア ここまで　-->
+
+　　　 <!-- 写真2（左右の写真）のエリア -->
+      <div class="photo2">
+
+         <!-- 写真2（左の写真）のエリア -->
+         <div class="img2">
+
+           <img class="company photo" id="company-id" src="https://lh3.googleusercontent.com/ic9BC6Co9jyr96EMwh6El9HJM0p6QkvLujH_sJ87ulDR37DXO01p5hcvDUQn7MfThJoDAPND04d5OXVt3iKPRnAjD2nQJ9XHTzXKl-CDX1prOfd_9rY-7vTQTilwg161I22F7yp2o2JzbTZYjy81sko3PJIV49jpl6tJm7oSOdELqIPVhdXeG3cm65nbw_bEM04i91hwX8_WD3YLSbLZLmWTPHlXfz-cTARv6_hk_UWO4TRdpPR41lUOsJsNaZ7_chLF_SGVT24F1WrBgDDnVCwwxc367AB5QgcT9mZs1JjEMep-OiTu1p8aPiUaMk50qMONSbDwOgvf5jgp4J4AeTK3mES7a3M2eUYQ-ZTfhCNLzjZN5kAUcZ6YBhbeFiyq0C0vuV8Cpu0AxrW6JxRWI7X2JrlrXV8nurhKxnhsUHsFIMe1f5_62XnNEXQgTYKWBxpf3CicjtFdMELwkE5Cl9Xqt-EgwfReuTlBJ8Op6jpmCmnb3YxK9FUGXuQW4oGmNLJIV2CdAKdDgRWMZGujieq1LbHFqUHx_aPAt1CFQzcWwKafJmPYW8dVuJHxnGXO5lpIO1u48IvQPCz7RgPtcFB2JPEwRmRavXg3NWbFjhN7UsxX1CS2K9PEY9-Kxn8vjh3nm17gQZ-a-kKHgbrdyKi5fcctVJ809eYq-ghySVmmVgq5daVRnriJaUhYQHuLzRECbV46fvpu2JZLY3zk7OU=s794-no?authuser=0" alt="会社外見">
+
+         </div>　<!-- 写真2（左の写真）のエリア ここまで-->
+
+         <!-- 写真３（右の写真）のエリア -->
+         <div class="img2">
+
+           <img class="desk photo" id="desk-id" src="https://lh3.googleusercontent.com/ZQ_qgICs8--irizVNhyzRioWysAYqSbNMyp3WNnx7MYyDyJ3_-wNzyVceq3PJP8oNKozdPfCV25vJhsB-Eoh1yDfjsRuMJ3WD1tTocIRH_uOhy6-8C7uWLAKJtq0HPlPpifnhvNtl-ryIdHEw_52nbJdc5FzXgxyHZEKjojElZrv_fIfb8uRv98V-ja7r-Yxh7_H4OWRTYLAWz5T86rYo3-_t41pu9qtxm1EH2is42CyrhMKqywGbLN5l3xQHH3Ci2aVsD7Mz54fyDxQlh1CxK-dvfV9AsBCSMEDumhn5VBgD1R82fhLzPxzHKWNAbcFjvyL0kbaaqNcqu53uGA-7cL_3eKb9Wf6XS-VEVQIGLNmUrKubBgckAbRcKAKVJMwsYyDAOtOnJeKTQdlWb88fSy6KHihXPbCuR5WCfMNBT-vriW-3CiKmFqKk2ew3pcpuxd_a3yzzFiP8_CKR38IJzxOsBgWLh0EFq0OsC24CwnwOopZqban76EXXKefUGubd1lpmbiB43RCYOXkuq1CR_QENrPPBNZ9lIMKJgreZapN2GjDgOOGlYGV5LkW4knXQk0weUKL4U2D3W2jLPM1r-YnALegaE_UgaouCy_TTMCaT0dU8XNkYtKFu47JGsYDQvtawr79NdOLSE1l0a82I-DxqsCQIXWaGTpBZ_rgghmD_x8k1UlAL5u85ObQ5yAmAVebNF5AUiLuEPLIiCImqLM=s794-no?authuser=0" alt="会社デスク">
+
+         </div>　<!-- 写真３（右の写真）のエリア ここまで-->
+
+      </div>
+
+    </header>
+
+　  <!-- 文字「Renovation of distribution warehouse...」-->
+    <h2 class="text-renovation-of">Renovation of distribution warehouse.<br><span>物流倉庫をリノベーション</span></h2>
+
+    <!-- 文字「築50年もの物流倉庫を大幅にリノベーション...」-->
+    <p class="text-explanation">築50年もの物流倉庫を大幅にリノベーション。画期的なオフィス・カフェ、さらには撮影スタジオに変貌しました。そしてこの施設は誰でも利用可能。昨今テレワークの動きが広まる中、たまにはお洒落なワーキングスペースで仕事押してみたいと言う要望に応えるお洒落な内装。休憩がてらカフェを使用し美味しいコーヒを楽しむこともできます。今や個人でインターネットを使い事業を広めることができる時代。ECサイトの運営に役立つ撮影スタジオもついています。</p>
+
+    <!-- 設計図の写真 -->
+    <img class="blueprint"src="https://lh3.googleusercontent.com/TcwNr5bXVFhTLn77z6dipwNzzS_-d39QyMblcaGvhr0nRfvZPHUqasVPKzbQ8_ft4-PqTMNrf4P_wYXmcHbb7SrldsF2dkWaL_IAB3f413uObKd3g0Df7DGFdovwkLj9rNZCTi3Bufytvuzy9yWuDm1YTiTj_ewZTFo7eH17mhRLzzoUzribxaG70QPjTUBnYmWwHfvoGk12t4BvPkYRJSTG_8tLk4ASq7FK_rhOhGfayppKqkAvGyKXdPlNpi8wQ2Yfw8vgm_YfpoDmYkAy-EFiFx3VPqi_Vy5kZoF7rXZstKajMUKXBlt7dTKAlJZOBIF0SQvocO6cH75-quycnY7dVB0xlHbtJha4MsNv0x8EB2PryK0vFVWMMMLaUPew808OOsnvHVxCcYOBU231f9LJkbXMIQc49oVVVKSe67Neyu1chhcZbD8uWxfPN0Lf72Chn08g3HtEaFxSidaZKX2FZiA28EiYwx2DcfdgbUp5B3HuTgzPut8uwiB6ju8ptIqqiG73_PAeDBBIi0Rr_bnGBpzl8HHdglDOO8XnmVGudKSKVsEzmuC6Eby2LVPKd4K5-bPf84-lOaqUO8OvAjVqBE37vicDbviwtE4sOvPIs7G_UurPmwHJS61qlQLL0Eo7OEcJe1kYMMoVCfGb4HNjzhR7hEhfK9jv5Nx4wu-bT5Rr7dzgRvt8yvY3PHiTW6cGW2Vz2j8QJugXtrb80fE=w1080-h720-no?authuser=0" alt="設計図">
+
+　　 <!-- 文字「Relaxing space...」-->
+    <h2 class="text-relax">Relaxing space.<br><span>誰もがリラックスできる空間</span></h2>
+
+    <!-- 文字「元は物流倉庫。コンクリートの風合いを残しつつ...」-->
+    <p class="text-usability">元は物流倉庫。コンクリートの風合いを残しつつ、モダンに大改造した内装は、デザイン性も高く最高の空間。その空間で自分の仕事をするもよし、友達と写真撮影するもよし、一人で読書をしながらカフェでコーヒーを飲むもよし。現代人のライフワークに合わせた内装で最高のひと時を。</p>
+
+    <!-- 最後の倉庫画像 -->
+    <img class="last-photo" src="https://lh3.googleusercontent.com/2-W6vtOIEWyye9-unwzXkhhG5GnGry2ZANrf2qCRdI04pmpfejrRNz__6Ffh9OFLrLD5m9Uj2nRCcPnOPBqujpR5-Q5lqLAsn591xJxyPFbWSzPRhomcrUcEHGjRU9iTPRtfSYgQL2N42-2YdNBO2WqyBV1T7bzBNn8eCZBexQZEaV_0ahssCBms_3W4hRWPTY0726r3lNN-GFKXnEY8C6n68_sVBT2QbMexP9K4rnSEtE2Es1O92aZSljJNvKN5nTShy3oj0xZ8tU6NspmX-dXge12lOOBA94iB6cTta27WnC8O7VH0WIhC39Tu0_MjUdEoLagmJxNRbhrSmEAT1V5wOrIZ9gZFgL1VD1ILl7KeN31cVwrCH5wtxgdgZu7monayyoUFlFMe9TriqEQ0CAayUL3mPOsHDx0Cp-iQ2JwD4lI4uORIeyAXiuJQ9IJkhqLacgsvpioC3m0mAr7Zbgu3LWPrAFXle4WeRkt1u7U7sl7bQh1pQ5ScqA_dlyijs_WjaKsBPSUtASPbaT_v8R8zTBdV9OEGgbDuvMrwY2SgR7Qao2cquFSeayim1CIrOFel84TWhwkgTZWPCgkI15gt3nb-eA0QpLEkhd8080heGjgAjmU71MXVjM43rqqRIL-9_QyM_ChC7mnglRYABOw0ILhxsfVXEJk2yNg-_nFHRot10ZYHEeJiGQ9QQFimj_TcHY5YHXVE7XNCvPWX0OA=w1080-h720-no?authuser=0" alt="リニューアル倉庫">
+
+　  <!-- フッダー部分-->
+    <div class="last-backcolor">
+      <p>株式会社米三<br>Copyright(C) 2021 KOMESAN. Co.,Ltd. All Rights Reserved.</p>
+
+    </div>　<!-- フッダー部分　ここまで-->
+
+
+  <!-- jqueryを読み込み -->
+  <script src="script3.js"></script>
+
+  </body>
+</html>
