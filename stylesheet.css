@@ -1,0 +1,629 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+/* ページをジャンプするとき、ゆっくりスクロールするように移動させるプログラム　👇 */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+/* ヘッダー（top画像の部分の重なり順を２番目にする） */
+header {
+  z-index: 10;
+}
+
+/* top画像の設定 */
+.top {
+  width:100vw;
+  height:100vh;
+  object-fit: cover;
+  display:none;
+  padding-bottom:-100px;
+  margin-bottom:-60px;
+  position: relative;
+}
+
+/* top 「KOMESAN」 の文字編集 */
+.text-komesan {
+  color:white;
+  font-family: Athelas;
+  font-size:550%;
+  position: absolute;
+  top: 43vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  display:none;
+}
+
+/* top 「freeapace...」 の文字編集 */
+.text-freeapace {
+  color:white;
+  opacity: 0.7;
+  font-family: Athelas;
+  font-size:275%;
+  position: absolute;
+  top: 56vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  display:none;
+  letter-spacing: 3px;
+  min-width:100%;
+}
+
+/* top 「全く新しいコワーキングスペースの誕生」 の文字編集 */
+.text-subtitle {
+  color:white;
+  opacity: 0.7;
+  font-family: 游明朝体;
+  font-size:15px;
+  text-align: center;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display:none;
+  letter-spacing: 2px;
+}
+
+/* top 「SCROLL」 の文字編集 */
+.text-scroll {
+  color:white;
+  opacity: 0.8;
+  font-family: 游明朝体;
+  font-size:15px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: none;
+  letter-spacing: 3px;
+}
+
+/* top 「▽」 画像の編集 */
+.triangle {
+  display:none;
+  width:2.6%;
+  margin:auto;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* 文字の中間揃え */
+.top-text {
+  text-align: center;
+}
+
+
+
+/* メニューバー */
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: .5s;
+  z-index: 3;
+}
+.open nav {
+  left: 0;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -240px;
+    width: 240px;
+  }
+}
+/*============
+@keyframes
+=============*/
+@keyframes equalizer01 {
+  0% {
+    width: 70%;
+  }
+  10% {
+    width: 50%;
+  }
+  20% {
+    width: 100%;
+  }
+  30% {
+    width: 10%;
+  }
+  40% {
+    width: 50%;
+  }
+  50% {
+    width: 70%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 10%;
+  }
+  80% {
+    width: 100%;
+  }
+  90% {
+    width: 10%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes equalizer02 {
+  0% {
+    width: 30%;
+  }
+  10% {
+    width: 20%;
+  }
+  20% {
+    width: 40%;
+  }
+  30% {
+    width: 10%;
+  }
+  40% {
+    width: 20%;
+  }
+  50% {
+    width: 30%;
+  }
+  60% {
+    width: 20%;
+  }
+  70% {
+    width: 10%;
+  }
+  80% {
+    width: 40%;
+  }
+  90% {
+    width: 10%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 60px;
+  height: 30px;
+  transform: translate(0, 0);
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.open .toggle_btn {
+  left: 330px;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #666;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 5px;
+  width: 60px;
+  animation: equalizer01 7000ms infinite;
+}
+.toggle_btn span:nth-child(2) {
+  top: 15px;
+  width: 30px;
+  animation: equalizer02 5000ms infinite;
+  animation-delay: 0.33s;
+}
+.toggle_btn span:nth-child(3) {
+  top: 25px;
+  width: 20px;
+  animation: equalizer02 5000ms infinite;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+  width: 30px;
+}
+.open .toggle_btn span:nth-child(1) {
+  transform: translate(0, 10px) rotate(-45deg);
+  animation: unset;
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+  animation: unset;
+}
+.open .toggle_btn span:nth-child(3) {
+  transform: translate(0, -10px) rotate(45deg);
+  animation: unset;
+}
+@media screen and (max-width: 767px) {
+  .open .toggle_btn {
+    left: 260px;
+  }
+}
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+  transition: all .5s;
+}
+/*============
+main
+=============*/
+main {
+  padding: 50px;
+}
+main h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+/*============
+body
+=============*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* メニューバー　ここまで */
+
+
+
+/* jQueryで5秒後に表示する要素は最初隠しておく */
+.set-time5 {
+  display: none;
+}
+
+/* メイン中央の文字「Circular-Renovation」の編集 */
+.circular {
+  font-family: 游明朝体;
+  font-size:27px;
+  text-align: center;
+  margin-top:50px;
+  letter-spacing: 3px;
+}
+
+/* メイン中央の文字「全く新しいコワーキングスペースの形」の編集 */
+.text-newwork {
+  font-family: 游明朝体;
+  font-size:15px;
+  text-align: center;
+  margin-top:-10px;
+  letter-spacing: 3px;
+}
+
+/* メイン部分の倉庫写真の編集（緑色の写真） */
+.souko {
+  width:30%;
+}
+
+/* メイン部分の倉庫リノベーション後写真の編集（茶色の写真） */
+.new-souko {
+  width:29%;
+  position: relative;
+  left:-200px;
+  top:150px;
+}
+
+/* メイン部分リノベーション説明文の編集（老築化倉庫をリノベーション...） */
+.text-description {
+  width:40%;
+  float:right;
+  position: relative;
+  left:-50px;
+  top:-140px;
+  font-family: 游明朝体;
+  letter-spacing: 0px;
+}
+
+/* 中間「ソファ」のクラスエリアの大きさを設定（slideDownした時に影響を受けないように設定） */
+.sofa-class {
+  width:100vw;
+  height:34.722vw;
+  position: relative;
+  top:13.889vw;
+}
+
+/* 中間「ソファ」の写真・文字全部 */
+.all-sofa {
+  position: relative;
+  top:-15.972vw;
+}
+
+/* 中間「ソファ」画像の編集 */
+.sofa {
+  margin-top:6.944vw;
+  width:75vw;
+  transition: 1.0s;　/* ホバーアウトした時、ゆっくり元に戻るように設定 */
+}
+
+/* 「ソファ」の写真にホバーした時の処理 */
+.sofa:hover {
+  transition: 1.0s;
+  transform: scale(1.1);
+  transform-origin: 20% 50%;
+  cursor: pointer;
+}
+
+/* 「ソファ」写真の文字「Interior 内装」の編集 */
+.text-interior {
+  text-align: center;
+  color:white;
+  font-size:1.8vw;
+  font-family: 游明朝体;
+  position: relative;
+  top:-21.528vw;
+  left:32.639vw;
+  width:6.944vw;
+}
+
+/* 「ソファ」写真の文字「倉庫のグランジ感を残したモダンなデザイン...」の編集 */
+.text-interior2 {
+  text-align: center;
+  color:white;
+  font-family: 游明朝体;
+  position: relative;
+  top:-24.306vw;
+  left:22.223vw;
+  border-top: 1px solid white;
+  width:27.778vw;
+  padding-top:0.694vw;
+  display: none;
+  font-size:1.2vw;
+}
+
+a {
+  text-decoration: none;　/* 下線を消すコード */
+}
+
+/* 中間「カフェ」クラスエリアの大きさを設定（slideDownした時に影響を受けないように設定） */
+.cafe-class{
+  width:100vw;
+  height:24.306vw;
+}
+
+/* 中間「カフェ」画像の編集 */
+.cafe {
+  position: relative;
+  top:24.306vw;
+  float:right;
+  transition: 1.0s;
+  width:75vw;
+}
+
+/* 「カフェ」の写真にホバーした時の処理 */
+.cafe:hover {
+  transition: 1.0s;
+  transform: scale(1.1);
+  transform-origin: 100% 50%;
+  cursor: pointer;
+}
+
+/* 「Institution　施設」文字処理 */
+.text-institution {
+  text-align: center;
+  color:white;
+  font-size:1.8vw;
+  font-family: 游明朝体;
+  position: relative;
+  top:36.194vw;
+  left:52vw;
+  margin-right: 60vw;
+}
+
+/* 「誰でも利用可能な豊富な施設・設備...」文字処理 */
+.text-institution2 {
+  text-align: center;
+  color:white;
+  font-family: 游明朝体;
+  float:left;
+  position: relative;
+  top:32.806vw;
+  left:53vw;
+  border-top: 1px solid white;
+  padding-top:0.694vw;
+  display: none;
+  font-size:1.2vw;
+}
+
+/* スライド画像・背景色全て */
+.photo-slide{
+  margin-top:45.139vw;
+}
+
+/* スライド画像の背景色（グレー背景） */
+.backcolor-glay {
+  width:100vw;
+  height:52.083vw;
+  background-color:	#111111;
+}
+
+/* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
+.image-text {
+  color:white;
+  font-family: 游明朝体;
+  text-align: center;
+  position: relative;
+  top:2.639vw;
+  opacity: 0.8;
+  font-size:1.042vw;
+  letter-spacing: 0.208vw;
+  padding:0.347vw 0 0.694vw 0;
+}
+
+/* 「写真のスライドグループ（●も含めて） */
+.slide-wrapper{
+  text-align: center;
+  margin: 0 auto;
+  color: #5e6f84;
+  position: relative;
+  top:-1.389vw;
+  left:-0.694vw;
+}
+
+/* スライド写真のみのグループ */
+.slides img {
+  width:60vw;
+  overflow: hidden;
+}
+
+.google-map {
+  width:100%;
+  height:100%;
+}
+
+/* スライド写真（非表示画像） */
+.slide {
+  display:none;
+}
+
+/* スライド写真（画像を表示させる） */
+.active {
+  display:block;
+}
+
+/* ○ボタン */
+.index-btn {
+  display:inline-block;
+  color:white;
+  width: 2.778vw;
+  cursor: pointer;
+  position: relative;
+  top:-2.778vw;
+}
+
+/* ●●●●の下の文字「ビジネス・授業・リモートワーク等...」 */
+.business-text {
+  color:white;
+  font-family: 游明朝体;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 0.069vw;
+  margin-top:-2.2vw;
+  opacity: 0.8;
+}
+
+/* 文字「access」 */
+.text-access{
+  text-align:center;
+  font-family: 游明朝体;
+  font-size:1.875vw;
+}
+
+/* 文字「access」の下「どなたでも来店可能。みんなのコワーキングスペース」 */
+.text-access span {
+  font-family: 游明朝体;
+  font-size:1.042vw;
+  text-align: center;
+  letter-spacing: 0.208vw;
+}
+
+/* 地図や会社住所等のグループ 全体のエリア指定*/
+.access-alia {
+  width:100vw;
+  height:32.639vw;
+}
+
+/* 地図や会社住所等のグループ 全体のエリア内にボックス３つ作るためのエリア指定*/
+.box {
+  width:32.6vw;
+  height:32.639vw;
+  float:left;
+  margin:0 0.347vw;
+  text-align: center;
+}
+
+/* 地図や会社住所等のグループの画像３枚*/
+.box img {
+  width:100%;
+  transition: 0.5s;
+}
+
+/* 画像３枚にカーソルを乗せると少し縮む*/
+.box-img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+/* 一番下のグレーの背景 */
+.last-backcolor {
+  width:100%;
+  height:200px;
+  padding:0;
+  margin-top:50px;
+  background-color:	#111111;
+}
+
+/* 一番下のグレーの背景内の文字 */
+.last-backcolor p {
+  color:white;
+  text-align:center;
+  font-family: 游明朝体;
+  padding-top:80px;
+}
