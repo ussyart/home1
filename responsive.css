@@ -646,6 +646,14 @@
     position: relative;
     top:-72vw;
   }
+  
+  /* スライド写真のみのグループ */
+  .slides img {
+    width:90vw;
+    position: relative;
+    left:-3vw;
+    top:-2.8vw;
+  }
 
   /* ○ボタン */
   .index-btn {
