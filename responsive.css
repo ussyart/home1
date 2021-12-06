@@ -652,13 +652,13 @@
     width:90vw;
     position: relative;
     left:-3vw;
-    top:-5vw;
+    top:-8vw;
   }
 
   /* ○ボタン */
   .index-btn {
     position: relative;
-    top:-21vw;
+    top:-24vw;
   }
 
   /* top 「SCROLL」 の文字編集 */
