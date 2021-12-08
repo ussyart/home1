@@ -1,3 +1,5 @@
+/* 2ページ目 「内装」のCSS */
+
 /* ページの余白を消す */
 body {
    margin-top: -37px;
@@ -15,6 +17,21 @@ body {
 
 .overflow {
   overflow-x: hidden;
+}
+
+/* font(YuMincho)の指定 */
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: normal;
+	src: local('YuGothic-Medium'), /* PostScript Name = localの正式な指定方法 */
+	local('Yu Gothic Medium'),     /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
+	local('YuGothic-Regular');     /* 游ゴシックMediumが存在しないWindows8.1用 */
+}
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: bold;
+	src: local('YuGothic-Bold'), /* PostScript Name = localの正式な指定方法 */
+	local('Yu Gothic');          /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
 }
 
 /* トップの動画エリア */
@@ -43,7 +60,11 @@ body {
 /* トップの文字「The distribution warehouse is...」 */
 .text-top-renovation-of {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,7 +83,11 @@ body {
 /* 文字「SCROLL」と「▽」 */
 .scroll {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   position: absolute; /* 上80%の位置。左50%の位置になるよう指定 */
   top: 90%;
   left: 50%;
@@ -76,7 +101,11 @@ body {
 /* 文字「Innovative fashionable space.」 */
 .text-innovative{
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   margin-top:3.472vw;
 }
 
@@ -88,7 +117,11 @@ body {
 /* 文字「機能性だけではなく、見た目にもこだわりました...」 */
 .text-functionality {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   width:52%;
   margin: 0 auto;
   margin-top:2vw;
@@ -150,7 +183,11 @@ body {
 /* 文字「Renovation of distribution warehouse...」 */
 .text-renovation-of {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   margin-top:6.944vw;
 }
 
@@ -162,7 +199,11 @@ body {
 /* 文字「築50年もの物流倉庫を大幅にリノベーション...」 */
 .text-explanation {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   padding-top:2.083vw;
   width:47.7%;
   margin:0 auto;
@@ -179,7 +220,11 @@ body {
 /* 文字「Relaxing space...」 */
 .text-relax {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   margin-top:6.944vw;
 }
 
@@ -191,7 +236,11 @@ body {
 /* 文字「元は物流倉庫。コンクリートの風合いを残しつつ...」 */
 .text-usability {
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   padding-top:1.042vw;
   width:49%;
   margin:0 auto;
@@ -218,6 +267,10 @@ body {
 .last-backcolor p {
   color:white;
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+  
   padding-top:5.556vw;
 }
