@@ -41,7 +41,6 @@ body {
   height:108vh;
   margin-top:-30px;
   object-fit: cover;
-  overflow-x: hidden;
 }
 
 /* トップの動画 */
@@ -52,7 +51,6 @@ body {
   position: relative;
   display: none;
   object-fit: cover;
-  overflow-x: hidden;
 }
 
 
