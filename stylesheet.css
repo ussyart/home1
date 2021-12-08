@@ -37,12 +37,6 @@ header {
   overflow-x: hidden;
 }
 
-/* 下のスクロールバー消す設定 */
-.content {
-  overflow: scroll;
-　　　　overflow-x: hidden;
-}
-
 
 .top video {
   overflow-x: hidden;
