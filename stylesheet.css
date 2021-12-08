@@ -1,3 +1,4 @@
+/* ページの余白を消す */
 body {
    margin: 0;
    padding: 0;
@@ -16,6 +17,21 @@ html {
 /* ヘッダー（top画像の部分の重なり順を２番目にする） */
 header {
   z-index: 10;
+}
+
+/* font(YuMincho)の指定 */
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: normal;
+	src: local('YuGothic-Medium'), /* PostScript Name = localの正式な指定方法 */
+	local('Yu Gothic Medium'),     /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
+	local('YuGothic-Regular');     /* 游ゴシックMediumが存在しないWindows8.1用 */
+}
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: bold;
+	src: local('YuGothic-Bold'), /* PostScript Name = localの正式な指定方法 */
+	local('Yu Gothic');          /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
 }
 
 .overflow {
@@ -64,7 +80,11 @@ header {
 .text-subtitle {
   color:white;
   opacity: 0.7;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   font-size:15px;
   text-align: center;
   position: absolute;
@@ -345,7 +365,11 @@ body {
 
 /* メイン中央の文字「Circular-Renovation」の編集 */
 .circular {
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   font-size:27px;
   text-align: center;
   margin-top:50px;
@@ -354,7 +378,11 @@ body {
 
 /* メイン中央の文字「全く新しいコワーキングスペースの形」の編集 */
 .text-newwork {
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   font-size:15px;
   text-align: center;
   margin-top:-10px;
@@ -381,7 +409,11 @@ body {
   position: relative;
   left:-50px;
   top:-140px;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   letter-spacing: 0px;
 }
 
@@ -419,7 +451,11 @@ body {
   text-align: center;
   color:white;
   font-size:1.8vw;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   position: relative;
   top:-21.528vw;
   left:32.639vw;
@@ -430,7 +466,11 @@ body {
 .text-interior2 {
   text-align: center;
   color:white;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   position: relative;
   top:-24.306vw;
   left:22.223vw;
@@ -473,7 +513,11 @@ a {
   text-align: center;
   color:white;
   font-size:1.8vw;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   position: relative;
   top:36.194vw;
   left:52vw;
@@ -484,7 +528,11 @@ a {
 .text-institution2 {
   text-align: center;
   color:white;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   float:left;
   position: relative;
   top:32.806vw;
@@ -510,7 +558,11 @@ a {
 /* スライド画像上の文字「Renovated interior（改装後の内装/施設）」 */
 .image-text {
   color:white;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   text-align: center;
   position: relative;
   top:2.639vw;
@@ -564,7 +616,11 @@ a {
 /* ●●●●の下の文字「ビジネス・授業・リモートワーク等...」 */
 .business-text {
   color:white;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   text-align: center;
   font-weight: lighter;
   letter-spacing: 0.069vw;
@@ -575,13 +631,21 @@ a {
 /* 文字「access」 */
 .text-access{
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   font-size:1.875vw;
 }
 
 /* 文字「access」の下「どなたでも来店可能。みんなのコワーキングスペース」 */
 .text-access span {
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   font-size:1.042vw;
   text-align: center;
   letter-spacing: 0.208vw;
@@ -629,6 +693,10 @@ a {
 .last-backcolor p {
   color:white;
   text-align:center;
-  font-family: 游明朝体;
+  font-family:
+  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
   padding-top:80px;
 }
