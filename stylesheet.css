@@ -38,6 +38,10 @@ header {
   overflow-x: hidden;
 }
 
+video {
+  overflow-x: hidden;
+}
+
 /* top画像の設定 */
 .top {
   width:100vw;
