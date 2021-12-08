@@ -647,6 +647,11 @@
     top:-34.5vh;
   }
   
+    /* overflow解除 */
+  .overflow {
+    overflow:visible;
+  }
+  
   /* スライド写真のみのグループ */
   .slides img {
     width:90vw;
