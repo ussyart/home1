@@ -18,6 +18,10 @@ header {
   z-index: 10;
 }
 
+.overflow {
+  overflow-x: hidden;
+}
+
 /* top画像の設定 */
 .top {
   width:100vw;
