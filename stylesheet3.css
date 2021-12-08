@@ -13,6 +13,10 @@ body {
    padding: 0;
 }
 
+.overflow {
+  overflow-x: hidden;
+}
+
 /* トップの動画エリア */
 .top-area {
   background-color:black;
