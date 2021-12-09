@@ -7,6 +7,7 @@ body {
 /* ページをジャンプするとき、ゆっくりスクロールするように移動させるプログラム　👇 */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
