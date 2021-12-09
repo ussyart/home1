@@ -105,7 +105,11 @@ header {
 .text-scroll {
   color:white;
   opacity: 0.8;
-  font-family: 游明朝体;
+  font-family:
+	  YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+	
   font-size:15px;
   position: absolute;
   top: 88%;
